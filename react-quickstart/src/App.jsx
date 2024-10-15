@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <h1>Welcome back, BSIS3!!!!!</h1>
+      <h1>Welcome to my app</h1>
       <MyButton />
     </>
   )
