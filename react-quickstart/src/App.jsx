@@ -1,28 +1,26 @@
 import './App.css'
 import {useState} from 'react';
 
-function App() {
+function MyButton() {
   const [count, setCount] = useState(0);
-    function handleClick() {
-        setCount(count + 1);
-    }
+
+  function handleClick() {
+    setCount(count + 1);
+  }
 
   return (
-    <div>
-      <h1>Counters that update together</h1>
-      <MyButton count={count} onClick={handleClick} /> <br />
-      <MyButton count={count} onClick={handleClick} />
-    </div>
-  )
-}
-
-function MyButton({ count, onClick }) {
-  return (
-    <button onClick={onClick}>
+    <button onClick={handleClick}>
       Clicked {count} times
     </button>
-  )
+  );
 }
 
-
-export default App
+export default function MyApp() {
+  return (
+    <div>
+      <h1>Counters that update separately</h1>
+      <MyButton /> <br />
+      <MyButton />
+    </div>
+  );
+}
