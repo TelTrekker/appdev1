@@ -1,11 +1,12 @@
 import './App.css'
-import ShoppingList from './ShoppingList'
+import MyButton from './Mybutton'
 
 function App() {
  
   return (
     <>
-    <ShoppingList />
+    <h1>Welcome to my app</h1>
+    <MyButton />
     </>
   )
 }
