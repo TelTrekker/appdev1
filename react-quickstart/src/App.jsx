@@ -2,12 +2,12 @@ import './App.css'
 import MyButton from './Mybutton'
 
 function App() {
- 
   return (
-    <>
-    <h1>Welcome to my app</h1>
-    <MyButton />
-    </>
+    <div>
+      <h1>Counters that update separately</h1>
+      <MyButton /> <br />
+      <MyButton />
+    </div>
   )
 }
 
